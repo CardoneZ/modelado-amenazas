@@ -178,12 +178,14 @@
                 "text": "Páginas web\nen disco\n"
               },
               "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": "4 3"
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": "4 3"
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
               }
             },
             "visible": true,
@@ -194,15 +196,29 @@
               "type": "tm.Store",
               "name": "Páginas web\nen disco\n",
               "description": "",
-              "outOfScope": true,
+              "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "83731b9e-8299-4562-b18e-b82dbdd30a96",
+                  "title": "Modificación sin autorización",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Un atacante podría modificar\nlas páginas web sin\nautorización.\n",
+                  "mitigation": "Las páginas solo tienen\nacceso de lectura.\nÚnicamente el usuario\nadministrador puede tener\nacceso de escritura.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": "5"
+                }
+              ]
             }
           },
           {
@@ -1727,6 +1743,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Guillermo Vera",
-    "threatTop": 25
+    "threatTop": 26
   }
 }
